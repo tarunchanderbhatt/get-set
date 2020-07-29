@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Getter
+        var student = {
+            firstName: "Tarun",
+            lastName: "Chander Bhatt",
+            get fullName() {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        console.log(student.fullName);
+        document.write(student.fullName);
+
+
+        // Setter
+        var person = {
+            first: "urmila",
+            last: "Bhatt",
+            email: '',
+            set emailId(val) {
+                this.email = val;
+            }
+        }
+        person.email = "urmila.bhatt@gmail.com";
+        console.log("email Property", person.emailId);
+        console.log("emailId function", person.email);
+
+    </script>
+</body>
+
+</html>
